@@ -149,7 +149,7 @@ public class ReadWriteClusteredLockManagerUnitTestCase extends ClusteredLockMana
                 answerDoneLatch);
         BlockingAnswer<Boolean> caller2Answer = new BlockingAnswer<Boolean>(new TimeoutException(caller1), answerDoneLatch, 0,
                 null, null);
-        
+
         doAnswer(caller1Answer).when(handler).lockFromCluster("test", caller1, 1000);
         doAnswer(caller2Answer).when(handler).lockFromCluster("test", caller2, 1000);
 
@@ -157,7 +157,7 @@ public class ReadWriteClusteredLockManagerUnitTestCase extends ClusteredLockMana
         // which case t2 will not call handler.lockFromCluster("test", caller2, 1000);
         // See FIXME in method javadoc. So, we use times(0, 1) to specify no
         // calls are OK
-/*        
+/*
         expectLastCall().andAnswer(caller2Answer).times(0, 1);
         replay(handler);
 */
@@ -233,7 +233,7 @@ public class ReadWriteClusteredLockManagerUnitTestCase extends ClusteredLockMana
         assertEquals(node1, rsp.holder);
 
         rsp = target.remoteLock("test", caller1, 1000);
-        
+
         assertEquals(RemoteLockResponse.Flag.OK, rsp.flag);
         assertNull(rsp.holder);
     }
@@ -268,9 +268,9 @@ public class ReadWriteClusteredLockManagerUnitTestCase extends ClusteredLockMana
 
         doThrow(new TimeoutException(node1)).when(handler).lockFromCluster(eq("test"), eq(node1), anyLong());
 
-        when((List<Object>) rpcDispatcher.callMethodOnCluster(eq("test"), eq("releaseRemoteLock"), aryEq(new Object[] { "test", node1 }), 
+        when((List<Object>) rpcDispatcher.callMethodOnCluster(eq("test"), eq("releaseRemoteLock"), aryEq(new Object[] { "test", node1 }),
                         aryEq(AbstractClusterLockSupport.RELEASE_REMOTE_LOCK_TYPES), eq(true))).thenReturn(new ArrayList<Object>());
-        
+
         assertFalse(testee.lock("test", 10));
     }
 
@@ -312,7 +312,7 @@ public class ReadWriteClusteredLockManagerUnitTestCase extends ClusteredLockMana
         testee.membershipChanged(dead, new Vector<ClusterNode>(), all);
 
         verify(handler).unlockFromCluster("test", caller1);
-        
+
         // A call from a different caller should work
         rsp = target.remoteLock("test", caller2, 1000);
 
@@ -340,13 +340,13 @@ public class ReadWriteClusteredLockManagerUnitTestCase extends ClusteredLockMana
         when(handler.getLockHolder("test")).thenReturn(caller1);
 
         RemoteLockResponse rsp = target.remoteLock("test", caller1, 1);
-        
+
         verify(handler).lockFromCluster(eq("test"), eq(caller1), anyLong());
 
         assertEquals(RemoteLockResponse.Flag.OK, rsp.flag);
 
         target.releaseRemoteLock("test", caller2);
-        
+
         verify(handler, never()).unlockFromCluster("test", caller2);
     }
 

@@ -48,7 +48,7 @@ public class EjbInvokingServlet extends HttpServlet {
 
     @EJB
     private EJBBusinessInterface bean;
-    
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         final String classInWar = req.getParameter(CLASS_IN_WAR_PARAMETER);
@@ -57,7 +57,7 @@ public class EjbInvokingServlet extends HttpServlet {
         }
         try {
             bean.loadClass(classInWar);
-            // .war class shouldn't have been visible to a EJB in a .jar 
+            // .war class shouldn't have been visible to a EJB in a .jar
             resp.getOutputStream().print(FAILURE_MESSAGE);
         } catch (ClassNotFoundException cnfe) {
             // the ClassNotFoundException is expected since the class in the .war isn't expected to be visible to the

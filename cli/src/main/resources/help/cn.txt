@@ -12,7 +12,7 @@ Arguments:
 
 	node_path	- the new value for the current node path following the format
 				[node-type [=node-name (,node-type[=node-name])*]].
-				
+
 The following navigation signs are supported in the node-path:
 	/		- the root node (e.g. 'cd /' or 'cd /some=thing');
 	..		- parent node (e.g. 'cd ..');

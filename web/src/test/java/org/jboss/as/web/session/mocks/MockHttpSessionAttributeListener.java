@@ -30,7 +30,7 @@ import javax.servlet.http.HttpSessionBindingEvent;
 
 /**
  * @author Brian Stansberry
- * 
+ *
  */
 public class MockHttpSessionAttributeListener implements HttpSessionAttributeListener {
     public enum Type {
@@ -41,7 +41,7 @@ public class MockHttpSessionAttributeListener implements HttpSessionAttributeLis
 
     /*
      * (non-Javadoc)
-     * 
+     *
      * @see javax.servlet.http.HttpSessionAttributeListener#attributeAdded(javax.servlet.http.HttpSessionBindingEvent)
      */
     public void attributeAdded(HttpSessionBindingEvent arg0) {
@@ -50,7 +50,7 @@ public class MockHttpSessionAttributeListener implements HttpSessionAttributeLis
 
     /*
      * (non-Javadoc)
-     * 
+     *
      * @see javax.servlet.http.HttpSessionAttributeListener#attributeRemoved(javax.servlet.http.HttpSessionBindingEvent)
      */
     public void attributeRemoved(HttpSessionBindingEvent arg0) {
@@ -59,7 +59,7 @@ public class MockHttpSessionAttributeListener implements HttpSessionAttributeLis
 
     /*
      * (non-Javadoc)
-     * 
+     *
      * @see javax.servlet.http.HttpSessionAttributeListener#attributeReplaced(javax.servlet.http.HttpSessionBindingEvent)
      */
     public void attributeReplaced(HttpSessionBindingEvent arg0) {

@@ -36,6 +36,6 @@ public class ThrowingUndeclaredExceptionInterceptor {
 
     @AroundInvoke
     public Object aroundInvoke(InvocationContext ctx) throws Exception {
-        throw new SurpriseException("didn't expect this"); 
+        throw new SurpriseException("didn't expect this");
     }
 }

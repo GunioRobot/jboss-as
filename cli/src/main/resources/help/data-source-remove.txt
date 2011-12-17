@@ -5,6 +5,6 @@ Description:	removes a data source
 Arguments:
 
 	profile		- is allowed and required only in the domain mode, specifies the profile
-				from which the data source should be deleted. 
+				from which the data source should be deleted.
 
 	name		- the name of the data source to remove.

@@ -159,12 +159,12 @@ main() {
     if [ -z "$MVN_GOAL" ]; then
       MVN_GOAL="install"
     fi
-    
+
     # export some stuff for maven
     export MVN MAVEN_HOME MVN_OPTS MVN_GOAL
 
     echo "$MVN $MVN_OPTIONS $MVN_GOAL"
-    
+
     # execute in debug mode, or simply execute
     if [ "x$MVN_DEBUG" != "x" ]; then
 	  /bin/sh -x $MVN $MVN_OPTIONS $MVN_GOAL

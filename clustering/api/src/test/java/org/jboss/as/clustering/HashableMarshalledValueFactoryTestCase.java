@@ -28,7 +28,7 @@ import static org.junit.Assert.*;
  * @author Paul Ferraro
  */
 public class HashableMarshalledValueFactoryTestCase extends SimpleMarshalledValueFactoryTestCase {
-    
+
     @Override
     SimpleMarshalledValueFactory createFactory(MarshallingContext context) {
         return new HashableMarshalledValueFactory(context);

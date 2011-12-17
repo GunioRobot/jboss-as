@@ -15,7 +15,7 @@ if "%OS%" == "Windows_NT" (
 )
 
 rem Read an optional configuration file.
-if "x%STANDALONE_CONF%" == "x" (   
+if "x%STANDALONE_CONF%" == "x" (
    set "STANDALONE_CONF=%DIRNAME%standalone.conf.bat"
 )
 if exist "%STANDALONE_CONF%" (

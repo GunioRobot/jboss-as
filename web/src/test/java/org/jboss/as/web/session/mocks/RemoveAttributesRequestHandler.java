@@ -31,14 +31,14 @@ import org.apache.catalina.connector.Response;
 
 /**
  * @author Brian Stansberry
- * 
+ *
  */
 public class RemoveAttributesRequestHandler extends BasicRequestHandler {
     private Set<String> toRemove;
 
     /**
      * Create a new RemoveAttributesRequestHandler.
-     * 
+     *
      */
     public RemoveAttributesRequestHandler(Set<String> toRemove, boolean checkNames) {
         super(toRemove, checkNames);

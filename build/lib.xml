@@ -99,7 +99,7 @@
             </copy>
         </sequential>
     </macrodef>
-    
+
     <scriptdef name="define-module-dir" language="javascript">
         <attribute name="name"/>
         <attribute name="slot"/>
@@ -119,7 +119,7 @@
             project.setProperty("current.bundle.path", name + "/" + attributes.get("slot"));
         ]]>
     </scriptdef>
-    
+
     <macrodef name="maven-resource" >
         <attribute name="group"/>
         <attribute name="artifact"/>

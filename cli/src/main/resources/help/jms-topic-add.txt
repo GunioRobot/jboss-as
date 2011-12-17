@@ -5,9 +5,9 @@ Description:	creates a JMS topic
 Arguments:
 
 	profile		- is allowed and required only in the domain mode, specifies the profile
-				in which the JMS resource should be created. 
+				in which the JMS resource should be created.
 
 	name		- the name of the topic.
-	
+
 	entries		- an optional comma-separated list of JNDI names the topic should be bound under.
 				  If not present, the name will be used as the JNDI name.

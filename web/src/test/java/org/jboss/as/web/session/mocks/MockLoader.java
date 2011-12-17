@@ -29,7 +29,7 @@ import org.apache.catalina.Loader;
 
 /**
  * Mock Loader impl for use in unit tests.
- * 
+ *
  * @author <a href="brian.stansberry@jboss.com">Brian Stansberry</a>
  * @version $Revision: 93046 $
  */

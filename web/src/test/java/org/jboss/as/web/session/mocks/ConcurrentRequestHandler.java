@@ -30,9 +30,9 @@ import org.apache.catalina.connector.Response;
 
 /**
  * Uses a ThreadLocal to allow a single RequestHandlerValve to concurrently handle requests.
- * 
+ *
  * @author Brian Stansberry
- * 
+ *
  * @version $Revision: $
  */
 public class ConcurrentRequestHandler implements RequestHandler {

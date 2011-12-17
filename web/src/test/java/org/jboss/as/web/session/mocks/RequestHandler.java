@@ -27,7 +27,7 @@ import org.apache.catalina.connector.Response;
 
 /**
  * @author Brian Stansberry
- * 
+ *
  */
 public interface RequestHandler {
     void handleRequest(Request request, Response response);

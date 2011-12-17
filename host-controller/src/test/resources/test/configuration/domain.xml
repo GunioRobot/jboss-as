@@ -57,7 +57,7 @@
         <!--</profile>-->
     </profiles>
 
-    <!--  
+    <!--
          Named interfaces that can be referenced elsewhere. Different
          mechanisms for associating an IP address with the interface
          are shown.
@@ -72,7 +72,7 @@
             <any-ipv4-address/>
         </interface>
         <interface name="internal">
-            <!-- 
+            <!--
                 Here we provide a set of criteria that are used to narrow the
                 set of IP addresses available on the host to one that is acceptable.
             -->
@@ -82,7 +82,7 @@
             <up/>
             <site-local-address/>
 
-            <!-- Alternatively... 
+            <!-- Alternatively...
             <public-address/>
             -->
             <nic name="eth0"/>
@@ -94,15 +94,15 @@
             </any>
         </interface>
         <interface name="public3">
-            <!--  
+            <!--
                 Here we name the NIC; the IP address associated with NIC whose
                 byte representation has the lowest
             -->
             <nic name="eth1"/>
         </interface>
-        <!-- 
-             For this one, no address selection criteria is provided, so 
-             an override at the host or server level is required. 
+        <!--
+             For this one, no address selection criteria is provided, so
+             an override at the host or server level is required.
         -->
         <interface name="public4"/>
     </interfaces>

@@ -32,7 +32,7 @@ import org.apache.catalina.connector.Response;
 
 /**
  * @author Brian Stansberry
- * 
+ *
  */
 public class MockResponse extends Response {
     private Connector connector;
@@ -40,7 +40,7 @@ public class MockResponse extends Response {
 
     /**
      * Create a new MockResponse.
-     * 
+     *
      */
     public MockResponse(Connector connector) {
         this.connector = connector;

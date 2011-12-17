@@ -33,7 +33,7 @@ import org.osgi.framework.Bundle;
 
 /**
  * An interceptor that creates and attaches HttpMetadata.
- * 
+ *
  * @author thomas.diesler@jboss.com
  * @since 23-Oct-2009
  */

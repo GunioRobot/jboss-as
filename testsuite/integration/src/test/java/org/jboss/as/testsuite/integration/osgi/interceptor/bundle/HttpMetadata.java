@@ -23,7 +23,7 @@ package org.jboss.as.testsuite.integration.osgi.interceptor.bundle;
 
 /**
  * Metadata the represent an Http endpoint
- * 
+ *
  * @author thomas.diesler@jboss.com
  * @since 23-Oct-2009
  */

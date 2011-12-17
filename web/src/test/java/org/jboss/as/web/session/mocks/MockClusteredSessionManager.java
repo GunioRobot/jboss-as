@@ -39,7 +39,7 @@ import org.jboss.metadata.web.jboss.ReplicationTrigger;
 
 /**
  * @author Brian Stansberry
- * 
+ *
  */
 public class MockClusteredSessionManager extends MockSessionManager implements
         ClusteredSessionManager<OutgoingDistributableSessionData> {
@@ -49,7 +49,7 @@ public class MockClusteredSessionManager extends MockSessionManager implements
 
     /**
      * Create a new MockJBossManager.
-     * 
+     *
      */
     public MockClusteredSessionManager() {
     }

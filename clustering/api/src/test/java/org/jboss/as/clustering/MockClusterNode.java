@@ -40,7 +40,7 @@ public class MockClusterNode implements ClusterNode {
     public MockClusterNode(int port) {
         this(getLocalHost(), port);
     }
-    
+
     private static InetAddress getLocalHost() {
         try {
             return InetAddress.getLocalHost();
@@ -48,7 +48,7 @@ public class MockClusterNode implements ClusterNode {
             throw new IllegalStateException(e);
         }
     }
-    
+
     public MockClusterNode(InetAddress addr, int port) {
         this.address = addr;
         this.port = port;

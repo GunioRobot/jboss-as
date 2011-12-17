@@ -15,7 +15,7 @@ if "%OS%" == "Windows_NT" (
 )
 
 rem Read an optional configuration file.
-if "x%DOMAIN_CONF%" == "x" (   
+if "x%DOMAIN_CONF%" == "x" (
    set "DOMAIN_CONF=%DIRNAME%domain.conf.bat"
 )
 if exist "%DOMAIN_CONF%" (

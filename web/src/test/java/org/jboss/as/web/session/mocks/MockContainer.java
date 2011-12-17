@@ -29,7 +29,7 @@ import org.apache.catalina.core.StandardPipeline;
 
 /**
  * Mock Container impl to wrap a JBossCacheManager in unit tests.
- * 
+ *
  * @author <a href="brian.stansberry@jboss.com">Brian Stansberry</a>
  * @version $Revision: 82920 $
  */

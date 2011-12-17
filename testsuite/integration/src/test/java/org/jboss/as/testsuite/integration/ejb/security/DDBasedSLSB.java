@@ -33,15 +33,15 @@ import javax.ejb.Stateless;
 public class DDBasedSLSB implements FullAccess {
 
     public void accessDenied() {
-        
+
     }
 
     public void onlyTestRoleCanAccess() {
-        
+
     }
 
     @Override
     public void doAnything() {
-        
+
     }
 }

@@ -31,12 +31,12 @@ import org.jboss.as.web.session.notification.ClusteredSessionNotificationCause;
 
 /**
  * @author Brian Stansberry
- * 
+ *
  */
 public class MockSession extends ClusteredSession<OutgoingDistributableSessionData> {
     /**
      * Create a new MockSession.
-     * 
+     *
      * @param manager
      */
     public MockSession(MockClusteredSessionManager manager) {

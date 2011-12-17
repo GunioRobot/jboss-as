@@ -27,7 +27,7 @@ import org.apache.catalina.Service;
 
 /**
  * @author Brian Stansberry
- * 
+ *
  */
 public class MockEngine extends MockContainer implements Engine {
     private Service service;
@@ -36,7 +36,7 @@ public class MockEngine extends MockContainer implements Engine {
 
     /*
      * (non-Javadoc)
-     * 
+     *
      * @see org.apache.catalina.Engine#getDefaultHost()
      */
     public String getDefaultHost() {
@@ -45,7 +45,7 @@ public class MockEngine extends MockContainer implements Engine {
 
     /*
      * (non-Javadoc)
-     * 
+     *
      * @see org.apache.catalina.Engine#getJvmRoute()
      */
     public String getJvmRoute() {
@@ -54,7 +54,7 @@ public class MockEngine extends MockContainer implements Engine {
 
     /*
      * (non-Javadoc)
-     * 
+     *
      * @see org.apache.catalina.Engine#getService()
      */
     public Service getService() {
@@ -63,7 +63,7 @@ public class MockEngine extends MockContainer implements Engine {
 
     /*
      * (non-Javadoc)
-     * 
+     *
      * @see org.apache.catalina.Engine#setDefaultHost(java.lang.String)
      */
     public void setDefaultHost(String arg0) {
@@ -72,7 +72,7 @@ public class MockEngine extends MockContainer implements Engine {
 
     /*
      * (non-Javadoc)
-     * 
+     *
      * @see org.apache.catalina.Engine#setJvmRoute(java.lang.String)
      */
     public void setJvmRoute(String arg0) {
@@ -81,7 +81,7 @@ public class MockEngine extends MockContainer implements Engine {
 
     /*
      * (non-Javadoc)
-     * 
+     *
      * @see org.apache.catalina.Engine#setService(org.apache.catalina.Service)
      */
     public void setService(Service arg0) {

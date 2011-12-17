@@ -68,7 +68,7 @@ public abstract class ClusteredLockManagerTestBase<T extends AbstractClusterLock
 
         assertEquals("test", testee.getServiceHAName());
         assertEquals("TestPartition", testee.getGroupName());
-        
+
         try {
             testee.lock("id", 1000);
             fail("Call to lock() should fail if not started");
@@ -98,9 +98,9 @@ public abstract class ClusteredLockManagerTestBase<T extends AbstractClusterLock
     public void stop() throws Exception {
         TesteeSet<T> testeeSet = getTesteeSet(node1, 0, 1);
         T testee = testeeSet.impl;
-        
+
         testee.stop();
-        
+
         verify(testee.getGroupMembershipNotifier()).unregisterGroupMembershipListener(same(testee));
         verify(testee.getGroupRpcDispatcher()).unregisterRPCHandler(eq("test"), same(testeeSet.target));
 
@@ -187,7 +187,7 @@ public abstract class ClusteredLockManagerTestBase<T extends AbstractClusterLock
                 eq(NULL_FILTER), anyInt(), eq(false))).thenReturn(rspList);
 
         assertTrue(testee.lock("test", 200000));
-        
+
         verify(handler).lockFromCluster(eq("test"), eq(node1), anyLong());
     }
 
@@ -480,7 +480,7 @@ public abstract class ClusteredLockManagerTestBase<T extends AbstractClusterLock
         assertTrue(testee.lock("test", 200000));
 
         verify(handler).lockFromCluster(eq("test"), eq(node1), anyLong());
-        
+
         testeeSet.target.releaseRemoteLock("test", other);
 
         verify(handler, never()).unlockFromCluster("test", other);
@@ -495,19 +495,19 @@ public abstract class ClusteredLockManagerTestBase<T extends AbstractClusterLock
         when(rpcDispatcher.getGroupName()).thenReturn("TestPartition");
 
         ArgumentCaptor<RpcTarget> c = ArgumentCaptor.forClass(RpcTarget.class);
-        
+
         Vector<ClusterNode> view = getView(node, viewPos, viewSize);
         when(rpcDispatcher.getClusterNodes()).thenReturn(view.toArray(new ClusterNode[view.size()]));
         when(rpcDispatcher.isConsistentWith(notifier)).thenReturn(true);
-        
+
         T testee = createClusteredLockManager("test", rpcDispatcher, notifier, handler);
 
         testee.start();
-        
+
         verify(rpcDispatcher).registerRPCHandler(eq("test"), c.capture());
         verify(notifier).registerGroupMembershipListener(same(testee));
         verify(handler).setLocalNode(same(node));
-        
+
         return new TesteeSet<T>(testee, c.getValue());
     }
 

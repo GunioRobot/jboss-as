@@ -35,5 +35,5 @@
             <inject bean="jboss:name=test,type=config"/>
         </attribute>
     </mbean>
-    
+
 </server>

@@ -61,7 +61,7 @@ public class TestHelper {
         final Attachable attachable = new SimpleAttachable();
         final DeploymentUnit deploymentUnit = mock(DeploymentUnit.class);
         when(deploymentUnit.getName()).thenReturn(duName);
-        
+
         when(deploymentUnit.getAttachment((AttachmentKey<Object>) any())).thenAnswer(new Answer() {
             @Override
             public Object answer(InvocationOnMock invocation) throws Throwable {

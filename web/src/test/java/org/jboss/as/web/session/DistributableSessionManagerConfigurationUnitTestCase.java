@@ -91,7 +91,7 @@ public class DistributableSessionManagerConfigurationUnitTestCase {
         manager.stop();
 
         webMetaData = createWebMetaData(null, null, null, null, Boolean.TRUE);
-        
+
         manager = SessionTestUtil.createManager(webMetaData, "test" + ++testCount, 5, cacheContainer, null);
         manager.start();
 
@@ -100,7 +100,7 @@ public class DistributableSessionManagerConfigurationUnitTestCase {
         manager.stop();
 
         webMetaData = createWebMetaData(null, null, null, null, null);
-        
+
         manager = SessionTestUtil.createManager(webMetaData, "test" + ++testCount, 5, cacheContainer, "test");
         manager.start();
 

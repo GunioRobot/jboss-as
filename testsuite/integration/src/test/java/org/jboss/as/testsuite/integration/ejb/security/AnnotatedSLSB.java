@@ -49,7 +49,7 @@ public class AnnotatedSLSB extends Base implements Restriction, FullAccess {
 
     @Override
     public void overriddenMethod() {
-        
+
     }
 
 }

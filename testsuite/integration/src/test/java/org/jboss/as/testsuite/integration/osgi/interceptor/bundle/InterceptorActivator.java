@@ -28,7 +28,7 @@ import org.osgi.framework.BundleContext;
 
 /**
  * Registers the interceptors with the {@link LifecycleInterceptorService}
- * 
+ *
  * @author thomas.diesler@jboss.com
  * @since 20-Oct-2009
  */

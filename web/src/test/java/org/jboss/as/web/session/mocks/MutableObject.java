@@ -26,9 +26,9 @@ import java.io.Serializable;
 
 /**
  * Simple wrapper around a string that will trigger replication on a get if SET_AND_NON_PRIMITIVE_GET is used.
- * 
+ *
  * @author Brian Stansberry
- * 
+ *
  */
 public class MutableObject implements Serializable {
     /** The serialVersionUID */
@@ -38,7 +38,7 @@ public class MutableObject implements Serializable {
 
     /**
      * Create a new MutableObject.
-     * 
+     *
      */
     public MutableObject(String string) {
         this.string = string;

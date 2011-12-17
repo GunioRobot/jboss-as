@@ -31,7 +31,7 @@ import org.apache.catalina.connector.Response;
 
 /**
  * @author Brian Stansberry
- * 
+ *
  */
 public class RequestHandlerValve extends MockValve {
     private RequestHandler requestHandler;

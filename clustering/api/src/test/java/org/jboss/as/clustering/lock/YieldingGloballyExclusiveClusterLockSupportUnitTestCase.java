@@ -58,7 +58,7 @@ public class YieldingGloballyExclusiveClusterLockSupportUnitTestCase extends Clu
         RemoteLockResponse rsp = target.remoteLock("test", caller, 1000);
 
         verify(handler).lockFromCluster("test", caller, 1000);
-        
+
         assertEquals(RemoteLockResponse.Flag.OK, rsp.flag);
         assertNull(rsp.holder);
 
@@ -66,7 +66,7 @@ public class YieldingGloballyExclusiveClusterLockSupportUnitTestCase extends Clu
         rsp = target.remoteLock("test", caller, 1000);
 
         verify(handler).lockFromCluster("test", caller, 1000);
-        
+
         assertEquals(RemoteLockResponse.Flag.OK, rsp.flag);
         assertNull(rsp.holder);
     }

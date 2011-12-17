@@ -38,7 +38,7 @@ import javax.servlet.http.HttpServletResponse;
 public class SimpleServlet extends HttpServlet {
     @EJB
     private SimpleStatelessSessionBean bean;
-    
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String msg = req.getParameter("input");

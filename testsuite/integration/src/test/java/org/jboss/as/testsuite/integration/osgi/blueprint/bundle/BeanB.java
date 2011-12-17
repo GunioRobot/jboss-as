@@ -23,7 +23,7 @@ package org.jboss.as.testsuite.integration.osgi.blueprint.bundle;
 
 /**
  * A basic bean
- * 
+ *
  * @author thomas.diesler@jboss.com
  * @since 13-May-2009
  */

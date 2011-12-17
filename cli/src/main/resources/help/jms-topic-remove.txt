@@ -5,6 +5,6 @@ Description:	removes a JMS topic
 Arguments:
 
 	profile		- is allowed and required only in the domain mode, specifies the profile
-				from which the JMS resource should be deleted. 
+				from which the JMS resource should be deleted.
 
 	name	- the name of the JMS topic.

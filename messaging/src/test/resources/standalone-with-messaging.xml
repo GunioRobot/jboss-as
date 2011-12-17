@@ -43,7 +43,7 @@
             <journal-directory relative-to="jboss.server.data.dir" path="hornetq/journal" />
             <journal-min-files>2</journal-min-files>
             <!-- Default journal file size is 10Mb, reduced here to 100k for faster first boot -->
-            <journal-file-size>102400</journal-file-size>         
+            <journal-file-size>102400</journal-file-size>
 
             <connectors>
                <in-vm-connector name="in-vm" server-id="0" />

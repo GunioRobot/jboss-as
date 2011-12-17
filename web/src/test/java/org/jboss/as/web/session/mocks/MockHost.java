@@ -27,12 +27,12 @@ import org.apache.catalina.Host;
 
 /**
  * @author Brian Stansberry
- * 
+ *
  */
 public class MockHost extends MockContainer implements Host {
     /*
      * (non-Javadoc)
-     * 
+     *
      * @see org.apache.catalina.Host#addAlias(java.lang.String)
      */
     public void addAlias(String arg0) {
@@ -42,7 +42,7 @@ public class MockHost extends MockContainer implements Host {
 
     /*
      * (non-Javadoc)
-     * 
+     *
      * @see org.apache.catalina.Host#findAliases()
      */
     public String[] findAliases() {
@@ -52,7 +52,7 @@ public class MockHost extends MockContainer implements Host {
 
     /*
      * (non-Javadoc)
-     * 
+     *
      * @see org.apache.catalina.Host#getAppBase()
      */
     public String getAppBase() {
@@ -62,7 +62,7 @@ public class MockHost extends MockContainer implements Host {
 
     /*
      * (non-Javadoc)
-     * 
+     *
      * @see org.apache.catalina.Host#getAutoDeploy()
      */
     public boolean getAutoDeploy() {
@@ -72,7 +72,7 @@ public class MockHost extends MockContainer implements Host {
 
     /*
      * (non-Javadoc)
-     * 
+     *
      * @see org.apache.catalina.Host#getConfigClass()
      */
     public String getConfigClass() {
@@ -82,7 +82,7 @@ public class MockHost extends MockContainer implements Host {
 
     /*
      * (non-Javadoc)
-     * 
+     *
      * @see org.apache.catalina.Host#getDeployOnStartup()
      */
     public boolean getDeployOnStartup() {
@@ -92,7 +92,7 @@ public class MockHost extends MockContainer implements Host {
 
     /*
      * (non-Javadoc)
-     * 
+     *
      * @see org.apache.catalina.Host#getXmlNamespaceAware()
      */
     public boolean getXmlNamespaceAware() {
@@ -102,7 +102,7 @@ public class MockHost extends MockContainer implements Host {
 
     /*
      * (non-Javadoc)
-     * 
+     *
      * @see org.apache.catalina.Host#getXmlValidation()
      */
     public boolean getXmlValidation() {
@@ -112,7 +112,7 @@ public class MockHost extends MockContainer implements Host {
 
     /*
      * (non-Javadoc)
-     * 
+     *
      * @see org.apache.catalina.Host#map(java.lang.String)
      */
     public Context map(String arg0) {
@@ -122,7 +122,7 @@ public class MockHost extends MockContainer implements Host {
 
     /*
      * (non-Javadoc)
-     * 
+     *
      * @see org.apache.catalina.Host#removeAlias(java.lang.String)
      */
     public void removeAlias(String arg0) {
@@ -132,7 +132,7 @@ public class MockHost extends MockContainer implements Host {
 
     /*
      * (non-Javadoc)
-     * 
+     *
      * @see org.apache.catalina.Host#setAppBase(java.lang.String)
      */
     public void setAppBase(String arg0) {
@@ -142,7 +142,7 @@ public class MockHost extends MockContainer implements Host {
 
     /*
      * (non-Javadoc)
-     * 
+     *
      * @see org.apache.catalina.Host#setAutoDeploy(boolean)
      */
     public void setAutoDeploy(boolean arg0) {
@@ -152,7 +152,7 @@ public class MockHost extends MockContainer implements Host {
 
     /*
      * (non-Javadoc)
-     * 
+     *
      * @see org.apache.catalina.Host#setConfigClass(java.lang.String)
      */
     public void setConfigClass(String arg0) {
@@ -162,7 +162,7 @@ public class MockHost extends MockContainer implements Host {
 
     /*
      * (non-Javadoc)
-     * 
+     *
      * @see org.apache.catalina.Host#setDeployOnStartup(boolean)
      */
     public void setDeployOnStartup(boolean arg0) {
@@ -172,7 +172,7 @@ public class MockHost extends MockContainer implements Host {
 
     /*
      * (non-Javadoc)
-     * 
+     *
      * @see org.apache.catalina.Host#setXmlNamespaceAware(boolean)
      */
     public void setXmlNamespaceAware(boolean arg0) {
@@ -182,7 +182,7 @@ public class MockHost extends MockContainer implements Host {
 
     /*
      * (non-Javadoc)
-     * 
+     *
      * @see org.apache.catalina.Host#setXmlValidation(boolean)
      */
     public void setXmlValidation(boolean arg0) {

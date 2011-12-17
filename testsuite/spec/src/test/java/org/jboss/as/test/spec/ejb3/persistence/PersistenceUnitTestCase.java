@@ -50,7 +50,7 @@ public class PersistenceUnitTestCase {
             "</persistence>";
 
 
-    
+
     @EJB (mappedName = "java:module/SingletonBean!org.jboss.as.test.spec.ejb3.persistence.SingletonBean")
     private SingletonBean singletonBean;
 

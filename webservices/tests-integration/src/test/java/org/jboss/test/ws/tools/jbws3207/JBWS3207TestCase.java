@@ -36,7 +36,7 @@ import org.jboss.wsf.spi.deployer.Deployer;
 import org.junit.Test;
 
 /**
- * 
+ *
  * @author <a href="ropalka@redhat.com">Richard Opalka</a>
  */
 public class JBWS3207TestCase {

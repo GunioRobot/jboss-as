@@ -30,7 +30,7 @@ import javax.servlet.http.HttpSessionListener;
 
 /**
  * @author Brian Stansberry
- * 
+ *
  */
 public class MockHttpSessionListener implements HttpSessionListener {
     public enum Type {
@@ -41,7 +41,7 @@ public class MockHttpSessionListener implements HttpSessionListener {
 
     /*
      * (non-Javadoc)
-     * 
+     *
      * @see javax.servlet.http.HttpSessionListener#sessionCreated(javax.servlet.http.HttpSessionEvent)
      */
     public void sessionCreated(HttpSessionEvent arg0) {
@@ -50,7 +50,7 @@ public class MockHttpSessionListener implements HttpSessionListener {
 
     /*
      * (non-Javadoc)
-     * 
+     *
      * @see javax.servlet.http.HttpSessionListener#sessionDestroyed(javax.servlet.http.HttpSessionEvent)
      */
     public void sessionDestroyed(HttpSessionEvent arg0) {

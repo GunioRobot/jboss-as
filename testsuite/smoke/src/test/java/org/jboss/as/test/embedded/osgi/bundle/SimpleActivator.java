@@ -27,7 +27,7 @@ import org.osgi.framework.BundleContext;
 
 /**
  * A Service Activator
- * 
+ *
  * @author thomas.diesler@jboss.com
  * @since 24-Apr-2009
  */

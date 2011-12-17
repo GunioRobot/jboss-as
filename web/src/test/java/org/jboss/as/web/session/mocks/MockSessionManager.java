@@ -31,14 +31,14 @@ import org.jboss.metadata.web.jboss.JBossWebMetaData;
 
 /**
  * Stubs out all the abstract JBossManager methods.
- * 
+ *
  * @author Brian Stansberry
  */
 public class MockSessionManager extends AbstractSessionManager {
 
     /**
      * Create a new MockJBossManager.
-     * 
+     *
      */
     public MockSessionManager() {
         super(new JBossWebMetaData());

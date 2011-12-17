@@ -35,10 +35,10 @@ import org.jboss.msc.service.ServiceName;
 import org.jboss.msc.service.ServiceRegistry;
 
 /**
- * 
- * 
+ *
+ *
  * @author Brian Stansberry
- * 
+ *
  * @version $Revision: $
  */
 public class MockDistributedCacheManagerFactory implements DistributedCacheManagerFactory {

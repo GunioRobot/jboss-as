@@ -33,7 +33,7 @@
         <depends optional-attribute-name="other">jboss:name=test,type=service</depends>
         <attribute name="somethingElse">
             <value-factory bean="jboss:name=test,type=service" method="appendSomethingElse">
-                <parameter class="java.lang.String">more value</parameter>    
+                <parameter class="java.lang.String">more value</parameter>
             </value-factory>
         </attribute>
     </mbean>

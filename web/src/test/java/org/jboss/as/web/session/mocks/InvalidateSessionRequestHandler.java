@@ -29,12 +29,12 @@ import org.apache.catalina.connector.Response;
 
 /**
  * @author Brian Stansberry
- * 
+ *
  */
 public class InvalidateSessionRequestHandler extends BasicRequestHandler {
     /**
      * Create a new InvalidateSessionRequestHandler.
-     * 
+     *
      */
     public InvalidateSessionRequestHandler(Set<String> toCheck, boolean checkNames) {
         super(toCheck, checkNames);

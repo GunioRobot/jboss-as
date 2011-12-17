@@ -35,7 +35,7 @@ import org.apache.catalina.connector.Response;
 
 /**
  * @author Brian Stansberry
- * 
+ *
  */
 public class BasicRequestHandler implements RequestHandler {
     private Set<String> namesToCheck = new HashSet<String>();
@@ -51,7 +51,7 @@ public class BasicRequestHandler implements RequestHandler {
 
     /**
      * Create a new AbstractRequestHandler.
-     * 
+     *
      */
     public BasicRequestHandler(Set<String> toCheck, boolean checkNames) {
         if (toCheck != null)

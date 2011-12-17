@@ -33,7 +33,7 @@ import org.jboss.servlet.http.HttpEvent;
 
 /**
  * @author Brian Stansberry
- * 
+ *
  */
 public class MockValve implements Valve {
     private Request invokedRequest;
@@ -42,7 +42,7 @@ public class MockValve implements Valve {
 
     /**
      * Create a new MockValve.
-     * 
+     *
      */
     public MockValve() {
     }

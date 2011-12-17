@@ -297,7 +297,7 @@ public class SharedLocalYieldingClusterLockManagerUnitTestCase {
 
         ArgumentCaptor<RpcTarget> c = ArgumentCaptor.forClass(RpcTarget.class);
         verify(rpcDispatcher).registerRPCHandler(eq("test"), c.capture());
-        
+
         return new TesteeSet(testee, rpcDispatcher, c.getValue());
     }
 
@@ -334,7 +334,7 @@ public class SharedLocalYieldingClusterLockManagerUnitTestCase {
         private final SharedLocalYieldingClusterLockManager testee;
         private final RpcTarget target;
         private final GroupRpcDispatcher rpcDispatcher;
-        
+
         private TesteeSet(SharedLocalYieldingClusterLockManager testee, GroupRpcDispatcher rpcDispatcher, RpcTarget target) {
             this.testee = testee;
             this.rpcDispatcher = rpcDispatcher;

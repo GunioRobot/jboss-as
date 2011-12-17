@@ -46,7 +46,7 @@ import static org.junit.Assert.*;
 public class DefaultEmbeddedCacheManagerTest {
     private final EmbeddedCacheManager manager = mock(EmbeddedCacheManager.class);
     private final EmbeddedCacheManager subject = new DefaultEmbeddedCacheManager(this.manager, "default");
-    
+
     @Test
     public void getDefaultCache() {
         @SuppressWarnings("unchecked")

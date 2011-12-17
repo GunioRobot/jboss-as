@@ -34,7 +34,7 @@ import org.jboss.as.clustering.web.SessionOwnershipSupport;
 
 /**
  * @author Brian Stansberry
- * 
+ *
  */
 public class MockDistributedCacheManager implements DistributedCacheManager<OutgoingDistributableSessionData> {
     public static final MockDistributedCacheManager INSTANCE = new MockDistributedCacheManager();

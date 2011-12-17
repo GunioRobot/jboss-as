@@ -32,7 +32,7 @@ import org.jboss.as.web.session.notification.ClusteredSessionNotificationPolicyB
 
 /**
  * @author Brian Stansberry
- * 
+ *
  */
 public class MockClusteredSessionNotificationPolicy extends ClusteredSessionNotificationPolicyBase implements
         ClusteredSessionNotificationPolicy {
@@ -45,7 +45,7 @@ public class MockClusteredSessionNotificationPolicy extends ClusteredSessionNoti
 
     /*
      * (non-Javadoc)
-     * 
+     *
      * @see org.jboss.web.tomcat.service.session.notification.ClusteredSessionNotificationPolicy#
      * isHttpSessionAttributeListenerInvocationAllowed
      * (org.jboss.web.tomcat.service.session.notification.ClusteredSessionManagementStatus,
@@ -59,7 +59,7 @@ public class MockClusteredSessionNotificationPolicy extends ClusteredSessionNoti
 
     /*
      * (non-Javadoc)
-     * 
+     *
      * @see org.jboss.web.tomcat.service.session.notification.ClusteredSessionNotificationPolicy#
      * isHttpSessionBindingListenerInvocationAllowed
      * (org.jboss.web.tomcat.service.session.notification.ClusteredSessionManagementStatus,
@@ -73,7 +73,7 @@ public class MockClusteredSessionNotificationPolicy extends ClusteredSessionNoti
 
     /*
      * (non-Javadoc)
-     * 
+     *
      * @see
      * org.jboss.web.tomcat.service.session.notification.ClusteredSessionNotificationPolicy#isHttpSessionListenerInvocationAllowed
      * (org.jboss.web.tomcat.service.session.notification.ClusteredSessionManagementStatus,

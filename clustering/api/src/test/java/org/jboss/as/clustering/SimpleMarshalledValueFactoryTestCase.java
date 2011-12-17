@@ -36,22 +36,22 @@ import org.junit.Test;
 
 /**
  * Unit tests for SimpleMarshalledValue.
- * 
+ *
  * @author Brian Stansberry
  */
 public class SimpleMarshalledValueFactoryTestCase {
     private final MarshallingContext context;
     private final SimpleMarshalledValueFactory factory;
-    
+
     public SimpleMarshalledValueFactoryTestCase() {
         this.context = new MarshallingContext(Marshalling.getMarshallerFactory("river"), new MarshallingConfiguration());
         this.factory = this.createFactory(this.context);
     }
-    
+
     SimpleMarshalledValueFactory createFactory(MarshallingContext context) {
         return new SimpleMarshalledValueFactory(context);
     }
-    
+
     /**
      * Test method for {@link org.jboss.ha.framework.server.SimpleMarshalledValue#get()}.
      */
@@ -67,7 +67,7 @@ public class SimpleMarshalledValueFactoryTestCase {
         SimpleMarshalledValue<GUID> copy = replicate(mv);
 
         assertNull(copy.peek());
-        
+
         GUID guid2 = copy.get(this.context);
         assertNotSame(guid, guid2);
         assertEquals(guid, guid2);
@@ -130,7 +130,7 @@ public class SimpleMarshalledValueFactoryTestCase {
     <T> void validateHashCode(T original, SimpleMarshalledValue<T> copy) {
         assertEquals(0, copy.hashCode());
     }
-    
+
     @SuppressWarnings("unchecked")
     <V> SimpleMarshalledValue<V> replicate(SimpleMarshalledValue<V> mv) throws IOException, ClassNotFoundException {
         return (SimpleMarshalledValue<V>) unmarshall(marshall(mv));

@@ -33,7 +33,7 @@ import org.apache.catalina.core.StandardContext;
 
 /**
  * @author Brian Stansberry
- * 
+ *
  */
 public class MockRequest extends Request {
     private Session session;
@@ -42,7 +42,7 @@ public class MockRequest extends Request {
 
     /**
      * Create a new MockRequest.
-     * 
+     *
      */
     public MockRequest(Manager manager) {
         Context context = (Context) manager.getContainer();

@@ -27,7 +27,7 @@ import org.mockito.ArgumentMatcher;
 import org.mockito.Mockito;
 
 class LockParamsMatcher extends ArgumentMatcher<Object[]> {
-    
+
     public static Object[] eqLockParams(ClusterNode node, long timeout) {
         return Mockito.argThat(new LockParamsMatcher(node, timeout));
     }

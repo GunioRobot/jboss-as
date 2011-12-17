@@ -22,7 +22,7 @@
 
 #include <orb.idl>
 #include <CSI.idl>
-            
+
 /**
  * This IDL module defines the SASCurrent interface.
  *

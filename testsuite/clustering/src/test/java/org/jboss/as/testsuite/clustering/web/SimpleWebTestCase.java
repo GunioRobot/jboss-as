@@ -46,7 +46,7 @@ import org.junit.runner.RunWith;
  */
 @RunWith(Arquillian.class)
 @RunAsClient
-public class SimpleWebTestCase {    
+public class SimpleWebTestCase {
     @Deployment
     public static Archive<?> deployment() {
         WebArchive war = ShrinkWrap.create(WebArchive.class, "distributable.war");
@@ -65,7 +65,7 @@ public class SimpleWebTestCase {
             Assert.assertEquals(Integer.parseInt(response.getFirstHeader("value").getValue()), 1);
             Assert.assertFalse(Boolean.valueOf(response.getFirstHeader("serialized").getValue()));
             response.getEntity().getContent().close();
-            
+
             response = client.execute(new HttpGet("http://localhost:8080/distributable/simple"));
             Assert.assertEquals(HttpServletResponse.SC_OK, response.getStatusLine().getStatusCode());
             Assert.assertEquals(Integer.parseInt(response.getFirstHeader("value").getValue()), 2);
